@@ -216,5 +216,5 @@ FakesAssemblies/
 _Pvt_Extensions
 
 # python stuff
-.pyproj
-.pyc
+*.pyproj
+*.pyc
