@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>e847fce4-c3f1-454d-90dc-98374f5d1294</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>app.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+    <StaticUriPattern>^/static/.*</StaticUriPattern>
+    <PythonWsgiHandler>{StartupModule}.wsgi_app</PythonWsgiHandler>
+    <Name>TwitchAdvertising</Name>
+    <RootNamespace>TwitchAdvertising</RootNamespace>
+    <WebBrowserUrl>
+    </WebBrowserUrl>
+    <WebBrowserPort>8983</WebBrowserPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.py" />
+    <Compile Include="marketingroutes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="oauth.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="routes.py" />
+    <Compile Include="twitchapiretriever.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="static\" />
+    <Folder Include="static\content\" />
+    <Folder Include="static\content\admin\" />
+    <Folder Include="static\content\admin\plugins\" />
+    <Folder Include="static\font-awesome\" />
+    <Folder Include="static\font-awesome\css\" />
+    <Folder Include="static\font-awesome\fonts\" />
+    <Folder Include="static\font-awesome\less\" />
+    <Folder Include="static\font-awesome\scss\" />
+    <Folder Include="static\fonts\" />
+    <Folder Include="static\adverts\" />
+    <Folder Include="static\fonts\admin\" />
+    <Folder Include="static\scripts\" />
+    <Folder Include="static\scripts\admin\" />
+    <Folder Include="static\scripts\admin\plugins\" />
+    <Folder Include="static\scripts\admin\plugins\flot\" />
+    <Folder Include="static\scripts\admin\plugins\morris\" />
+    <Folder Include="templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+    <Content Include="settings.ini" />
+    <Content Include="static\content\admin\bootstrap-rtl.css" />
+    <Content Include="static\content\admin\bootstrap-rtl.min.css" />
+    <Content Include="static\content\admin\bootstrap.css" />
+    <Content Include="static\content\admin\bootstrap.min.css" />
+    <Content Include="static\content\admin\plugins\morris.css" />
+    <Content Include="static\content\admin\sb-admin-rtl.css" />
+    <Content Include="static\content\admin\sb-admin.css" />
+    <Content Include="static\content\bootstrap.css" />
+    <Content Include="static\content\bootstrap.min.css" />
+    <Content Include="static\content\site.css" />
+    <Content Include="static\font-awesome\css\font-awesome.css" />
+    <Content Include="static\font-awesome\css\font-awesome.min.css" />
+    <Content Include="static\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="static\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="static\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="static\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="static\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="static\font-awesome\less\bordered-pulled.less" />
+    <Content Include="static\font-awesome\less\core.less" />
+    <Content Include="static\font-awesome\less\fixed-width.less" />
+    <Content Include="static\font-awesome\less\font-awesome.less" />
+    <Content Include="static\font-awesome\less\icons.less" />
+    <Content Include="static\font-awesome\less\larger.less" />
+    <Content Include="static\font-awesome\less\list.less" />
+    <Content Include="static\font-awesome\less\mixins.less" />
+    <Content Include="static\font-awesome\less\path.less" />
+    <Content Include="static\font-awesome\less\rotated-flipped.less" />
+    <Content Include="static\font-awesome\less\spinning.less" />
+    <Content Include="static\font-awesome\less\stacked.less" />
+    <Content Include="static\font-awesome\less\variables.less" />
+    <Content Include="static\font-awesome\scss\font-awesome.scss" />
+    <Content Include="static\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="static\font-awesome\scss\_core.scss" />
+    <Content Include="static\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="static\font-awesome\scss\_icons.scss" />
+    <Content Include="static\font-awesome\scss\_larger.scss" />
+    <Content Include="static\font-awesome\scss\_list.scss" />
+    <Content Include="static\font-awesome\scss\_mixins.scss" />
+    <Content Include="static\font-awesome\scss\_path.scss" />
+    <Content Include="static\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="static\font-awesome\scss\_spinning.scss" />
+    <Content Include="static\font-awesome\scss\_stacked.scss" />
+    <Content Include="static\font-awesome\scss\_variables.scss" />
+    <Content Include="static\fonts\admin\glyphicons-halflings-regular.eot" />
+    <Content Include="static\fonts\admin\glyphicons-halflings-regular.svg" />
+    <Content Include="static\fonts\admin\glyphicons-halflings-regular.ttf" />
+    <Content Include="static\fonts\admin\glyphicons-halflings-regular.woff" />
+    <Content Include="static\fonts\admin\glyphicons-halflings-regular.woff2" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="static\scripts\admin\bootstrap.js" />
+    <Content Include="static\scripts\admin\bootstrap.min.js" />
+    <Content Include="static\scripts\admin\jquery.js" />
+    <Content Include="static\scripts\admin\plugins\flot\excanvas.min.js" />
+    <Content Include="static\scripts\admin\plugins\flot\flot-data.js" />
+    <Content Include="static\scripts\admin\plugins\flot\jquery.flot.js" />
+    <Content Include="static\scripts\admin\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="static\scripts\admin\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="static\scripts\admin\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="static\scripts\admin\plugins\morris\morris-data.js" />
+    <Content Include="static\scripts\admin\plugins\morris\morris.js" />
+    <Content Include="static\scripts\admin\plugins\morris\morris.min.js" />
+    <Content Include="static\scripts\admin\plugins\morris\raphael.min.js" />
+    <Content Include="static\scripts\bootstrap.js" />
+    <Content Include="static\scripts\bootstrap.min.js" />
+    <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="static\scripts\jquery-1.10.2.js" />
+    <Content Include="static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="static\scripts\jquery.validate.js" />
+    <Content Include="static\scripts\jquery.validate.min.js" />
+    <Content Include="static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="static\scripts\modernizr-2.6.2.js" />
+    <Content Include="static\scripts\respond.js" />
+    <Content Include="static\scripts\respond.min.js" />
+    <Content Include="static\scripts\_references.js" />
+    <Content Include="templates\about.jade" />
+    <Content Include="templates\contact.jade" />
+    <Content Include="templates\index.jade" />
+    <Content Include="templates\layout.jade" />
+    <Content Include="templates\manage_campaign.jade">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="templates\marketing_layout.jade" />
+    <Content Include="templates\marketing.jade">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
