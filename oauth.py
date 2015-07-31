@@ -57,7 +57,7 @@ class OAuthSignIn:
         userInfo = twitchapiretriever.getUserInformation(self.client_id, session['oauth_access_token'])
 
         def log_access_token(username, access_token, scope):
-            client = MongoClient()
+            client = MongoClient() 
             db = client.ads
             collection = db.access_tokens
             collection.update({
